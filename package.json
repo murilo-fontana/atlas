@@ -1,0 +1,26 @@
+{
+  "name": "atlas",
+  "version": "1.0.0",
+  "description": "Alexa Custom Skill que conecta a Alexa a uma LLM via OpenAI API",
+  "main": "dist/index.js",
+  "scripts": {
+    "typecheck": "tsc",
+    "build": "esbuild src/index.ts --bundle --platform=node --target=node22 --external:@aws-sdk/* --outfile=dist/index.js",
+    "ask": "esbuild scripts/local-ask.ts --bundle --platform=node --target=node22 --outfile=dist/local-ask.js --log-level=warning && node --env-file=.env dist/local-ask.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.1085.0",
+    "ask-sdk-core": "^2.14.0",
+    "ask-sdk-model": "^1.86.0",
+    "openai": "^6.46.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.1",
+    "esbuild": "^0.28.1",
+    "typescript": "^7.0.2"
+  }
+}

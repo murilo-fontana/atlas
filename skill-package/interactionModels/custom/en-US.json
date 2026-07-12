@@ -1,0 +1,81 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "atlas",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "AskIntent",
+          "slots": [
+            {
+              "name": "question",
+              "type": "FreeTextQuestion"
+            }
+          ],
+          "samples": [
+            "{question}",
+            "ask {question}",
+            "tell me {question}",
+            "explain {question}",
+            "what is {question}",
+            "how do I {question}",
+            "which {question}",
+            "who {question}",
+            "how much {question}",
+            "how many {question}",
+            "when {question}",
+            "where {question}",
+            "why {question}",
+            "if {question}"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "name": "FreeTextQuestion",
+          "values": [
+            { "name": { "value": "what is the capital of australia" } },
+            { "name": { "value": "explain quantum computing" } },
+            { "name": { "value": "who won the game yesterday" } },
+            { "name": { "value": "when is the world cup final" } },
+            { "name": { "value": "why is the sky blue" } },
+            { "name": { "value": "who discovered penicillin" } },
+            { "name": { "value": "how to bake bread at home" } },
+            { "name": { "value": "it is someone from my family" } },
+            { "name": { "value": "yes go ahead and search" } },
+            { "name": { "value": "that is not what I meant" } },
+            { "name": { "value": "give me a practical example" } },
+            { "name": { "value": "explain it again more slowly" } },
+            { "name": { "value": "how much does it cost" } },
+            { "name": { "value": "is it worth buying now" } },
+            { "name": { "value": "keep going" } },
+            { "name": { "value": "that is right" } },
+            { "name": { "value": "what is the newest version of elixir" } },
+            { "name": { "value": "tell me the latest tech news" } },
+            { "name": { "value": "if I should wait for the next iphone or buy the current one" } },
+            { "name": { "value": "I want the weather forecast for lisbon tomorrow" } }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "atlas",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "AskIntent",
+          "slots": [
+            {
+              "name": "question",
+              "type": "FreeTextQuestion"
+            }
+          ],
+          "samples": [
+            "{question}",
+            "pergunta {question}",
+            "me explica {question}",
+            "o que é {question}",
+            "como faço {question}",
+            "me diz {question}",
+            "qual {question}",
+            "quem {question}",
+            "quanto {question}",
+            "quando {question}",
+            "onde {question}",
+            "por que {question}",
+            "se {question}"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "name": "FreeTextQuestion",
+          "values": [
+            { "name": { "value": "qual a capital da austrália" } },
+            { "name": { "value": "me explica o que é computação quântica" } },
+            { "name": { "value": "quanto ficou o jogo de ontem" } },
+            { "name": { "value": "quando será a final da copa do mundo" } },
+            { "name": { "value": "por que o céu é azul" } },
+            { "name": { "value": "quem descobriu a penicilina" } },
+            { "name": { "value": "como fazer pão em casa" } },
+            { "name": { "value": "é uma pessoa da minha família" } },
+            { "name": { "value": "sim pode buscar" } },
+            { "name": { "value": "não é isso que eu quis dizer" } },
+            { "name": { "value": "me dá um exemplo prático" } },
+            { "name": { "value": "explica de novo mais devagar" } },
+            { "name": { "value": "e quanto isso custa" } },
+            { "name": { "value": "vale a pena comprar agora" } },
+            { "name": { "value": "continua" } },
+            { "name": { "value": "isso mesmo" } },
+            { "name": { "value": "qual a versão mais recente do elixir" } },
+            { "name": { "value": "quais as notícias de tecnologia de hoje" } },
+            { "name": { "value": "se vale a pena esperar o próximo iphone ou comprar o atual" } },
+            { "name": { "value": "quero saber a previsão do tempo em lisboa amanhã" } }
+          ]
+        }
+      ]
+    }
+  }
+}
