@@ -1,3 +1,5 @@
+![Atlas](docs/assets/atlas-banner.png)
+
 # Atlas
 
 Personal Alexa skill that answers any question using the OpenAI API. No local server, runs entirely on AWS Lambda, designed to cost less than $5/month.
